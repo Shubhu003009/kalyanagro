@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Chivo:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Kalyan Agro Industries</title>
+  </head>
+
+  <body data-scroll-container>
+    <div class="wrapper relative">
+      <img
+        data-scroll
+        data-scroll-speed="3"
+        class="heroBg absolute inset-0 -z-10 sm:object-[0%_40%] object-[0%_40%] object-cover h-screen w-full"
+        src="/src/assests/img/heroBg.png"
+        alt="disk plough"
+      />
+
+      <header class="py-2 websize text-white">
+        <nav class="flex justify-between">
+          <div class="logo">
+            <a href="/">
+              <img
+                src="./src/assests/logo/logo7.png"
+                class="w-24 sm:w-28"
+                alt="kalyan agro industries"
+              />
+            </a>
+          </div>
+
+          <button onclick="openSideNav()" class="font-medium text-lg sm:hidden">
+            Menu
+          </button>
+
+          <!-- sideNav -->
+          <div
+            class="sideNav h-max py-10 opacity-0 bg-black text-white hidden sm:hidden absolute translate-y-[-20px] top-14 right-5 w-max p-4 border border-slate-900"
+          >
+            <ul class="flex flex-col items-center gap-4 font-medium text-lg">
+              <button class="mb-5" onclick="closeSideNav()">Close</button>
+              <li>
+                <a href="/equipments">Equipments</a>
+              </li>
+              <li>
+                <a href="/B2B">B2B</a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex mt-10 items-center gap-3 border border-gray-900 bg-white text-black py-1 px-3"
+                >
+                  Call Now
+                  <span class="text-black">
+                    <svg
+                      fill="currentColor"
+                      fillOpacity="1"
+                      version="1.1"
+                      id="Capa_1"
+                      width="20px"
+                      height="20px"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      viewBox="0 0 891.024 891.024"
+                      xml:space="preserve"
+                    >
+                      <g>
+                        <path
+                          d="M2.8,180.875c46.6,134,144.7,286.2,282.9,424.399c138.2,138.2,290.4,236.301,424.4,282.9c18.2,6.3,38.3,1.8,52-11.8
+                              l92.7-92.7l21.6-21.6c19.5-19.5,19.5-51.2,0-70.7l-143.5-143.4c-19.5-19.5-51.2-19.5-70.7,0l-38.899,38.9
+                              c-20.2,20.2-52.4,22.2-75,4.6c-44.7-34.8-89-73.899-131.9-116.8c-42.9-42.9-82-87.2-116.8-131.9c-17.601-22.6-15.601-54.7,4.6-75
+                              l38.9-38.9c19.5-19.5,19.5-51.2,0-70.7l-143.5-143.5c-19.5-19.5-51.2-19.5-70.7,0l-21.6,21.6l-92.7,92.7
+                              C1,142.575-3.5,162.675,2.8,180.875z"
+                        />
+                      </g>
+                    </svg>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- mainNav -->
+          <ul class="hidden sm:flex items-center">
+            <li>
+              <a
+                href="#"
+                class="flex items-center px-3 py-1 gap-3 rounded-md uppercase"
+              >
+                <span>
+                  <svg
+                    fill="currentColor"
+                    fillOpacity="1"
+                    version="1.1"
+                    id="Capa_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="20px"
+                    height="20px"
+                    viewBox="0 0 891.024 891.024"
+                    xml:space="preserve"
+                  >
+                    <g>
+                      <path
+                        d="M2.8,180.875c46.6,134,144.7,286.2,282.9,424.399c138.2,138.2,290.4,236.301,424.4,282.9c18.2,6.3,38.3,1.8,52-11.8
+                          l92.7-92.7l21.6-21.6c19.5-19.5,19.5-51.2,0-70.7l-143.5-143.4c-19.5-19.5-51.2-19.5-70.7,0l-38.899,38.9
+                          c-20.2,20.2-52.4,22.2-75,4.6c-44.7-34.8-89-73.899-131.9-116.8c-42.9-42.9-82-87.2-116.8-131.9c-17.601-22.6-15.601-54.7,4.6-75
+                          l38.9-38.9c19.5-19.5,19.5-51.2,0-70.7l-143.5-143.5c-19.5-19.5-51.2-19.5-70.7,0l-21.6,21.6l-92.7,92.7
+                          C1,142.575-3.5,162.675,2.8,180.875z"
+                      />
+                    </g>
+                  </svg>
+                </span>
+                Call
+              </a>
+            </li>
+            <li>
+              <a class="p-3 uppercase" href="#">Equipments</a>
+            </li>
+            <li>
+              <a class="p-3 uppercase" href="#">B2B</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="websize">
+        <section
+          class="max-w-max h-[90vh] mt-20 sm:mt-0 sm:place-content-center text-white"
+        >
+          <h1 class="md:text-7xl text-6xl mb-8 sm:mb-14">
+            Kalyan Agro Industries
+          </h1>
+          <p class="sm:text-lg">
+            Manufacturing agricultural equipments for Buissness and customers,
+            <br />
+            Disk-plough's , cultivator and many more
+          </p>
+          <button class="p-3 mt-5 bg-blue-600">ORDER NOW</button>
+        </section>
+      </main>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="/src/main.js"></script>
+</html>

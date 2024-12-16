@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Basement"; /* Name for your font */
+    src: url("/src/assests/fonts/BasementGrotesque.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Aileron"; /* Name for your font */
+    src: url("/src/assests/fonts/Aleron/Aileron-Thin.otf") format("opentype");
+    font-weight: 200;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Aileron"; /* Name for your font */
+    src: url("/src/assests/fonts/Aleron/Aileron-Light.otf") format("opentype");
+    font-weight: 300;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Aileron"; /* Name for your font */
+    src: url("/src/assests/fonts/Aleron/Aileron-Regular.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Aileron"; /* Name for your font */
+    src: url("/src/assests/fonts/Aleron/Aileron-SemiBold.otf")
+      format("opentype");
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Aileron"; /* Name for your font */
+    src: url("/src/assests/fonts/Aleron/Aileron-Bold.otf") format("opentype");
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  *,
+  *::before,
+  *::after {
+    font-family: "Barlow", sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    -webkit-font-smoothing: antialiased;
+  }
+  img,
+  picture,
+  video,
+  canvas,
+  svg {
+    display: block;
+    max-width: 100%;
+  }
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    overflow-wrap: break-word;
+  }
+  a,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Urbanist", sans-serif;
+    text-wrap: balance;
+  }
+  p {
+    text-wrap: pretty;
+  }
+
+  a:focus-visible {
+    outline-offset: 1px;
+  }
+  a {
+    display: block;
+    transition: all 0.3s ease;
+  }
+
+  a:hover {
+    scale: 1.1;
+  }
+}
+
+@layer utilities {
+  .websize {
+    width: min(1400px, calc(100% - 40px));
+    margin-inline: auto;
+  }
+}
