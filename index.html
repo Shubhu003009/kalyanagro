@@ -23,14 +23,19 @@
 
   <body data-scroll-container>
     <div class="wrapper relative">
-      <img
-        data-scroll
-        data-scroll-speed="3"
-        class="heroBg absolute inset-0 -z-10 sm:object-[0%_40%] object-[0%_40%] object-cover h-screen w-full"
-        src="/src/assests/img/heroBg.png"
-        alt="disk plough"
-      />
-
+      <picture>
+        <source
+          media="(max-width:465px)"
+          srcset="/src/assests/img/heroMobile.webp"
+        />
+        <img
+          data-scroll
+          data-scroll-speed="3"
+          class="heroBg absolute inset-0 -z-10 sm:object-[0%_40%] object-[55%_40%] object-cover h-screen w-full"
+          src="/src/assests/img/heroBg.webp"
+          alt="disk plough"
+        />
+      </picture>
       <header class="py-2 websize text-white">
         <nav class="flex justify-between">
           <div class="logo">
@@ -150,12 +155,46 @@
             <br />
             Disk-plough's , cultivator and many more
           </p>
-          <button class="p-3 mt-5 bg-blue-600">ORDER NOW</button>
+          <button
+            class="py-3 px-6 mt-5 bg-blue-600 flex justify-center items-center gap-2 hover:gap-4 transition-all duration-300 font-semibold"
+          >
+            ORDER NOW
+            <span>
+              <svg
+                fill="white"
+                width="20px"
+                height="20px"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                />
+              </svg>
+            </span>
+          </button>
+        </section>
+
+        <section class="py-10 min-h-[500px]">
+          <h3 class="text-2xl mb-5">Equipments</h3>
+          <div class="flex">
+            <ul
+              class="product_list basis-96 [&>*]:cursor-pointer [&>*]:py-1 [&>*]:mb-1"
+            >
+              <li>Disk plough</li>
+              <li>Cultivator</li>
+              <li>Simple disk plough</li>
+            </ul>
+            <div
+              class="product_showcase bg-blue-100 flex w-full items-center justify-center h-[400px]"
+            >
+              <img class="w-full h-full object-cover object-center" />
+            </div>
+          </div>
         </section>
       </main>
     </div>
   </body>
   <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-  <script src="/src/main.js"></script>
+  <script src="./main.js"></script>
 </html>
