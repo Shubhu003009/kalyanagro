@@ -17,6 +17,10 @@ const closeSideNav = () => {
   });
 };
 
+gsap.to(".heroBg", {
+  opacity: 1,
+});
+
 const body = document.body;
 let lastscroll = 0;
 
@@ -26,7 +30,7 @@ window.addEventListener("scroll", () => {
   if (currentScroll <= 0) {
     body.classList.remove("scroll-up");
   }
-  if (currentScroll > 200 && !body.classList.contains("scroll-down")) {
+  if (currentScroll > 110 && !body.classList.contains("scroll-down")) {
     body.classList.remove("scroll-up");
     body.classList.add("scroll-down");
   }
@@ -36,7 +40,7 @@ window.addEventListener("scroll", () => {
     body.classList.add("nav-scroll-color");
   }
 
-  if (currentScroll < 200) {
+  if (currentScroll < 110) {
     body.classList.remove("nav-scroll-color");
   }
 

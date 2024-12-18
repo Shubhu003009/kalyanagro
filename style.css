@@ -97,10 +97,8 @@
     outline-offset: 1px;
   }
   a {
-    display: block;
     transition: all 0.3s ease;
   }
-
   a:hover {
     scale: 1.1;
   }
@@ -123,6 +121,6 @@
 }
 
 .nav-scroll-color header {
-  background-color: transparent;
+  background-color: #0000006c;
   backdrop-filter: blur(10px);
 }
