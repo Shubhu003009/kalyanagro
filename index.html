@@ -15,13 +15,14 @@
 
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.css"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/dist/locomotive-scroll.css"
     />
+
     <link rel="stylesheet" href="style.css" />
     <title>Kalyan Agro Industries</title>
   </head>
 
-  <body data-scroll-container>
+  <body data-scroll-container data-scroll-target>
     <div class="wrapper relative">
       <picture>
         <source
@@ -30,14 +31,14 @@
         />
         <img
           data-scroll
-          data-scroll-speed="3"
+          data-scroll-speed=".2"
           class="heroBg absolute inset-0 -z-10 sm:object-[0%_40%] object-[55%_40%] object-cover h-screen w-full"
           src="/src/assests/img/heroBg.webp"
           alt="disk plough"
         />
       </picture>
-      <header class="py-2 websize text-white">
-        <nav class="flex justify-between">
+      <header class="py-2 text-white sticky top-0 left-0">
+        <nav class="flex websize justify-between">
           <div class="logo">
             <a href="/">
               <img
@@ -102,10 +103,7 @@
           <!-- mainNav -->
           <ul class="hidden sm:flex items-center">
             <li>
-              <a
-                href="#"
-                class="flex items-center px-3 py-1 gap-3 rounded-md uppercase"
-              >
+              <a href="#" class="flex items-center p-3 gap-3 uppercase">
                 <span>
                   <svg
                     fill="currentColor"
@@ -134,7 +132,13 @@
               </a>
             </li>
             <li>
-              <a class="p-3 uppercase" href="#">Equipments</a>
+              <a
+                class="p-3 uppercase"
+                data-scroll-to="equipments"
+                data-scroll-to-duration="2"
+                href="#equipments"
+                >Equipments</a
+              >
             </li>
             <li>
               <a class="p-3 uppercase" href="#">B2B</a>
@@ -156,7 +160,7 @@
             Disk-plough's , cultivator and many more
           </p>
           <button
-            class="py-3 px-6 mt-5 bg-blue-600 flex justify-center items-center gap-2 hover:gap-4 transition-all duration-300 font-semibold"
+            class="group py-3 px-6 mt-5 outline outline-blue-600 flex justify-center items-center gap-2 transition-all duration-300 font-semibold"
           >
             ORDER NOW
             <span>
@@ -165,6 +169,7 @@
                 width="20px"
                 height="20px"
                 viewBox="0 0 448 512"
+                class="group-hover:scale-125 transition-all duration-300 group-hover:translate-x-10 group-hover:opacity-0 group-hover:invisible"
               >
                 <path
                   d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
@@ -174,7 +179,11 @@
           </button>
         </section>
 
-        <section class="py-10 min-h-[500px]">
+        <section
+          id="equipments"
+          data-scroll-to-href="equipments"
+          class="py-10 min-h-[500px]"
+        >
           <h3 class="text-2xl mb-5">Equipments</h3>
           <div class="flex">
             <ul
@@ -194,7 +203,8 @@
       </main>
     </div>
   </body>
-  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
   <script src="./main.js"></script>
 </html>

@@ -49,6 +49,10 @@
     padding: 0;
     margin: 0;
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
   body {
     -webkit-font-smoothing: antialiased;
   }
@@ -107,4 +111,18 @@
     width: min(1400px, calc(100% - 40px));
     margin-inline: auto;
   }
+}
+
+.scroll-down header {
+  transition: all 0.3s ease 0.1s;
+  transform: translateY(-100%);
+}
+
+.scroll-up header {
+  transition: all 0.3s ease 0.1s;
+}
+
+.nav-scroll-color header {
+  background-color: transparent;
+  backdrop-filter: blur(10px);
 }
