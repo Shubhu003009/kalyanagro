@@ -1,26 +1,5 @@
 const locomotiveScroll = new LocomotiveScroll();
 
-const openSideNav = () => {
-  gsap.to(".sideNav", {
-    y: 0,
-    opacity: 1,
-    display: "flex",
-    duration: 0.5,
-  });
-};
-const closeSideNav = () => {
-  gsap.to(".sideNav", {
-    opacity: 0,
-    y: -20,
-    display: "none",
-    duration: 0.5,
-  });
-};
-
-gsap.to(".heroBg", {
-  opacity: 1,
-});
-
 const body = document.body;
 let lastscroll = 0;
 
@@ -30,7 +9,7 @@ window.addEventListener("scroll", () => {
   if (currentScroll <= 0) {
     body.classList.remove("scroll-up");
   }
-  if (currentScroll > 110 && !body.classList.contains("scroll-down")) {
+  if (currentScroll > 50 && !body.classList.contains("scroll-down")) {
     body.classList.remove("scroll-up");
     body.classList.add("scroll-down");
   }
@@ -40,23 +19,9 @@ window.addEventListener("scroll", () => {
     body.classList.add("nav-scroll-color");
   }
 
-  if (currentScroll < 110) {
+  if (currentScroll < 50) {
     body.classList.remove("nav-scroll-color");
   }
 
   lastscroll = currentScroll;
 });
-
-const product_list = document.querySelectorAll(".product_list li");
-const product_showcase = document.querySelector(".product_showcase img");
-const all_imgSrc = [
-  "/src/assests/img/heroBg.webp",
-  "/src/assests/img/heroMobile.webp",
-];
-
-product_showcase.src = all_imgSrc[0];
-product_list.forEach((product, i) =>
-  product.addEventListener("click", () => {
-    product_showcase.src = all_imgSrc[i];
-  })
-);

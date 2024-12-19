@@ -44,7 +44,7 @@
   *,
   *::before,
   *::after {
-    font-family: "Barlow", sans-serif;
+    font-family: "Roboto", sans-serif;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -86,7 +86,7 @@
   h4,
   h5,
   h6 {
-    font-family: "Urbanist", sans-serif;
+    font-family: "Basement", sans-serif;
     text-wrap: balance;
   }
   p {
@@ -94,33 +94,34 @@
   }
 
   a:focus-visible {
-    outline-offset: 1px;
+    outline-offset: 2px;
   }
-  a {
+  li a {
+    display: block;
     transition: all 0.3s ease;
   }
-  a:hover {
+  .desktopNav li a:hover {
     scale: 1.1;
   }
 }
 
 @layer utilities {
   .websize {
-    width: min(1400px, calc(100% - 40px));
+    width: min(1600px, calc(100% - 20px));
     margin-inline: auto;
   }
 }
 
 .scroll-down header {
-  transition: all 0.3s ease 0.1s;
+  transition: all 0.3s ease;
   transform: translateY(-100%);
 }
 
 .scroll-up header {
-  transition: all 0.3s ease 0.1s;
+  transition: all 0.6s ease 0.1s;
 }
 
 .nav-scroll-color header {
-  background-color: #0000006c;
-  backdrop-filter: blur(10px);
+  background-color: #111d27;
+  color: #edece9;
 }

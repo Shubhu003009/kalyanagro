@@ -22,260 +22,234 @@
     <title>Kalyan Agro Industries</title>
   </head>
 
-  <body>
-    <div class="wrapper">
-      <picture>
-        <source
-          media="(max-width:465px)"
-          srcset="/src/assests/img/heroMobile.webp"
-        />
-        <img
-          data-scroll
-          class="heroBg opacity-80 absolute inset-0 -z-10 sm:object-[0%_40%] object-[55%_40%] object-cover h-screen w-full"
-          src="/src/assests/img/heroBg.webp"
-          alt="disk plough"
-        />
-      </picture>
-      <span
-        data-scroll
-        data-scroll-speed=".1"
-        class="absolute top-[710px] left-[60px] text-xs text-white"
-      >
-        Engineered for Excellence in Agriculturew
-      </span>
-      <header class="py-2 text-white sticky top-0 left-0">
-        <nav class="flex websize justify-between">
-          <div class="logo">
-            <a href="/">
-              <img
-                src="./src/assests/logo/logo7.png"
-                class="w-24 sm:w-28"
-                alt="kalyan agro industries"
-              />
-            </a>
-          </div>
+  <body class="bg-offWhite text-offBlack">
+    <header class="sm:py-2 text-offBlack sticky top-0 left-0 z-50">
+      <nav class="flex websize justify-between items-center">
+        <a href="/">
+          <img
+            src="./src/assests/logo/logo7.png"
+            class="w-20 sm:w-24"
+            alt="kalyan agro industries"
+          />
+        </a>
 
-          <button onclick="openSideNav()" class="font-medium text-lg sm:hidden">
-            Menu
-          </button>
+        <button onclick="openSideNav()" class="text-4xl sm:hidden mb-3">
+          +
+        </button>
 
-          <!-- sideNav -->
-          <div
-            class="sideNav h-max py-10 opacity-0 bg-black text-white hidden sm:hidden absolute translate-y-[-20px] top-14 right-5 w-max p-4 border border-slate-900"
-          >
-            <ul class="flex flex-col items-center gap-4 font-medium text-lg">
-              <button class="mb-5" onclick="closeSideNav()">Close</button>
-              <li>
-                <a href="/equipments">Equipments</a>
-              </li>
-              <li>
-                <a href="/B2B">B2B</a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="flex mt-10 items-center gap-3 border border-gray-900 bg-white text-black py-1 px-3"
-                >
-                  Call Now
-                  <span class="text-black">
-                    <svg
-                      fill="currentColor"
-                      fillOpacity="1"
-                      version="1.1"
-                      id="Capa_1"
-                      width="20px"
-                      height="20px"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                      viewBox="0 0 891.024 891.024"
-                      xml:space="preserve"
-                    >
-                      <g>
-                        <path
-                          d="M2.8,180.875c46.6,134,144.7,286.2,282.9,424.399c138.2,138.2,290.4,236.301,424.4,282.9c18.2,6.3,38.3,1.8,52-11.8
-                              l92.7-92.7l21.6-21.6c19.5-19.5,19.5-51.2,0-70.7l-143.5-143.4c-19.5-19.5-51.2-19.5-70.7,0l-38.899,38.9
-                              c-20.2,20.2-52.4,22.2-75,4.6c-44.7-34.8-89-73.899-131.9-116.8c-42.9-42.9-82-87.2-116.8-131.9c-17.601-22.6-15.601-54.7,4.6-75
-                              l38.9-38.9c19.5-19.5,19.5-51.2,0-70.7l-143.5-143.5c-19.5-19.5-51.2-19.5-70.7,0l-21.6,21.6l-92.7,92.7
-                              C1,142.575-3.5,162.675,2.8,180.875z"
-                        />
-                      </g>
-                    </svg>
-                  </span>
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <!-- mainNav -->
-          <ul class="hidden sm:flex items-center">
+        <!-- mobiileNav -->
+        <div
+          class="sideNav h-max py-10 opacity-0 bg-black text-white hidden sm:hidden absolute translate-y-[-20px] top-14 right-5 w-max p-4 border border-slate-900"
+        >
+          <ul class="flex flex-col items-center gap-4 font-medium text-lg">
+            <button class="mb-5" onclick="closeSideNav()">Close</button>
             <li>
-              <a href="#" class="flex items-center p-3 gap-3 uppercase">
-                <span>
+              <a href="/equipments">Equipments</a>
+            </li>
+            <li>
+              <a href="/B2B">B2B</a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex mt-10 items-center gap-3 border border-gray-900 bg-white text-black py-1 px-3"
+              >
+                Call Now
+                <span class="text-black">
                   <svg
                     fill="currentColor"
                     fillOpacity="1"
                     version="1.1"
                     id="Capa_1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
                     width="20px"
                     height="20px"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
                     viewBox="0 0 891.024 891.024"
                     xml:space="preserve"
                   >
                     <g>
                       <path
                         d="M2.8,180.875c46.6,134,144.7,286.2,282.9,424.399c138.2,138.2,290.4,236.301,424.4,282.9c18.2,6.3,38.3,1.8,52-11.8
-                          l92.7-92.7l21.6-21.6c19.5-19.5,19.5-51.2,0-70.7l-143.5-143.4c-19.5-19.5-51.2-19.5-70.7,0l-38.899,38.9
-                          c-20.2,20.2-52.4,22.2-75,4.6c-44.7-34.8-89-73.899-131.9-116.8c-42.9-42.9-82-87.2-116.8-131.9c-17.601-22.6-15.601-54.7,4.6-75
-                          l38.9-38.9c19.5-19.5,19.5-51.2,0-70.7l-143.5-143.5c-19.5-19.5-51.2-19.5-70.7,0l-21.6,21.6l-92.7,92.7
-                          C1,142.575-3.5,162.675,2.8,180.875z"
+                              l92.7-92.7l21.6-21.6c19.5-19.5,19.5-51.2,0-70.7l-143.5-143.4c-19.5-19.5-51.2-19.5-70.7,0l-38.899,38.9
+                              c-20.2,20.2-52.4,22.2-75,4.6c-44.7-34.8-89-73.899-131.9-116.8c-42.9-42.9-82-87.2-116.8-131.9c-17.601-22.6-15.601-54.7,4.6-75
+                              l38.9-38.9c19.5-19.5,19.5-51.2,0-70.7l-143.5-143.5c-19.5-19.5-51.2-19.5-70.7,0l-21.6,21.6l-92.7,92.7
+                              C1,142.575-3.5,162.675,2.8,180.875z"
                       />
                     </g>
                   </svg>
                 </span>
-                Call
               </a>
             </li>
-            <li>
-              <a
-                class="p-3 uppercase"
-                data-scroll-to="equipments"
-                data-scroll-to-duration="2"
-                href="#equipments"
-                >Equipments</a
-              >
-            </li>
-            <li>
-              <a class="p-3 uppercase" href="#">B2B</a>
-            </li>
           </ul>
-        </nav>
-      </header>
+        </div>
 
-      <main class="websize">
-        <section class="max-w-max h-[80vh] mt-20 sm:mt-32 text-white">
-          <h1 class="md:text-7xl text-6xl mb-8 sm:mb-14">
-            Kalyan Agro Industries
-          </h1>
-          <p class="sm:text-lg max-w-[60ch]">
-            "From plows to harvesters, we provide the tools you need to
-            cultivate more, work smarter, and grow stronger."
-          </p>
-          <button
-            class="group relative min-w-[170px] py-3 ps-6 pe-14 hover:px-6 mt-5 outline outline-1 outline-white flex justify-center items-center gap-2 transition-all duration-500 font-semibold"
-          >
-            ORDER NOW
-            <span
-              class="text-white absolute right-5 top-[17px] transition-all duration-500 group-hover:translate-x-5 group-hover:opacity-0 group-hover:invisible"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="23.583"
-                height="11.478"
-                viewBox="0 0 23.583 11.478"
-                ml-update="aware"
-              >
-                <g
-                  id="Group_138"
-                  data-name="Group 138"
-                  transform="translate(0 0.99)"
+        <!-- desktopNav -->
+        <ul class="desktopNav hidden sm:flex items-center text-xs">
+          <li>
+            <a href="/callus" class="flex items-center p-3 gap-3">
+              <span>
+                <svg
+                  fill="currentColor"
+                  fillOpacity="1"
+                  version="1.1"
+                  id="Capa_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="15px"
+                  height="15px"
+                  viewBox="0 0 891.024 891.024"
+                  xml:space="preserve"
                 >
-                  <line
-                    id="Line_45"
-                    data-name="Line 45"
-                    x1="22"
-                    transform="translate(0 4.749)"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.4"
-                  />
+                  <g>
+                    <path
+                      d="M2.8,180.875c46.6,134,144.7,286.2,282.9,424.399c138.2,138.2,290.4,236.301,424.4,282.9c18.2,6.3,38.3,1.8,52-11.8
+                          l92.7-92.7l21.6-21.6c19.5-19.5,19.5-51.2,0-70.7l-143.5-143.4c-19.5-19.5-51.2-19.5-70.7,0l-38.899,38.9
+                          c-20.2,20.2-52.4,22.2-75,4.6c-44.7-34.8-89-73.899-131.9-116.8c-42.9-42.9-82-87.2-116.8-131.9c-17.601-22.6-15.601-54.7,4.6-75
+                          l38.9-38.9c19.5-19.5,19.5-51.2,0-70.7l-143.5-143.5c-19.5-19.5-51.2-19.5-70.7,0l-21.6,21.6l-92.7,92.7
+                          C1,142.575-3.5,162.675,2.8,180.875z"
+                    />
+                  </g>
+                </svg>
+              </span>
+              Call
+            </a>
+          </li>
+          <li>
+            <a
+              class="p-3"
+              data-scroll-to="equipments"
+              data-scroll-to-duration="2"
+              href="/equipments"
+              >Equipments</a
+            >
+          </li>
+          <li>
+            <a class="p-3" href="/b2b">B2B</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="websize">
+      <section class="text-offWhite mt-20 flex flex-col">
+        <h1
+          class="md:text-7xl text-center text-4xl text-offBlack uppercase font-bold"
+        >
+          kalyan Agro Industries
+        </h1>
+
+        <div
+          class="min-h-[730px] text-center sm:text-left p-2 relative flex flex-col sm:justify-end sm:pb-24 sm:pl-12"
+        >
+          <picture>
+            <source
+              media="(max-width:1025px)"
+              srcset="/src/assests/img/heroMobile.webp"
+            />
+            <img
+              class="heroBg absolute inset-0 sm:rounded-3xl rounded-xl -z-10 sm:object-[0%_40%] object-[70%_40%] object-cover h-full w-full"
+              src="/src/assests/img/heroBg.webp"
+              alt="disk plough"
+            />
+          </picture>
+
+          <div data-scroll data-scroll-speed="-0.05">
+            <h2 class="sm:text-3xl text-lg mt-16 mb-3">
+              Engineered for Excellence in Agriculture
+            </h2>
+
+            <p class="text-xs sm:text-sm max-w-[60ch]">
+              "From plows to harvesters, we provide the tools you need to
+              cultivate more, work smarter, and grow stronger."
+            </p>
+
+            <a
+              class="group mx-auto md:mx-0 relative max-w-[200px] sm:py-3 py-2 ps-6 pe-14 hover:px-3 active:px-3 sm:hover:px-6 sm:active:px-6 mt-10 border flex justify-center items-center gap-2 transition-all duration-500 font-semibold"
+              href="/order"
+            >
+              ORDER NOW
+              <span
+                class="text-white absolute right-5 top-[12px] sm:top-[18px] transition-all duration-500 group-hover:translate-x-5 group-hover:opacity-0 group-hover:invisible"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="23.583"
+                  height="11.478"
+                  viewBox="0 0 23.583 11.478"
+                  ml-update="aware"
+                >
                   <g
-                    id="Group_48"
-                    data-name="Group 48"
-                    transform="translate(17.844 0)"
+                    id="Group_138"
+                    data-name="Group 138"
+                    transform="translate(0 0.99)"
                   >
                     <line
-                      id="Line_42"
-                      data-name="Line 42"
-                      x2="4.749"
-                      y2="4.749"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="square"
-                      stroke-width="1.4"
-                    />
-                    <line
-                      id="Line_44"
-                      data-name="Line 44"
-                      y1="4.749"
-                      x2="4.749"
+                      id="Line_45"
+                      data-name="Line 45"
+                      x1="22"
                       transform="translate(0 4.749)"
                       fill="none"
                       stroke="currentColor"
-                      stroke-linecap="square"
                       stroke-width="1.4"
                     />
+                    <g
+                      id="Group_48"
+                      data-name="Group 48"
+                      transform="translate(17.844 0)"
+                    >
+                      <line
+                        id="Line_42"
+                        data-name="Line 42"
+                        x2="4.749"
+                        y2="4.749"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="square"
+                        stroke-width="1.4"
+                      />
+                      <line
+                        id="Line_44"
+                        data-name="Line 44"
+                        y1="4.749"
+                        x2="4.749"
+                        transform="translate(0 4.749)"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="square"
+                        stroke-width="1.4"
+                      />
+                    </g>
                   </g>
-                </g>
-              </svg>
-            </span>
-          </button>
-        </section>
-
-        <section
-          data-scroll
-          id="equipments"
-          data-scroll-to-href="equipments"
-          data-scroll-to-offset="1000"
-          class="py-10 min-h-[500px]"
-        >
-          <h3 class="text-2xl mb-5">Equipments</h3>
-          <div class="flex">
-            <ul
-              class="product_list basis-96 [&>*]:cursor-pointer [&>*]:py-1 [&>*]:mb-1"
-            >
-              <li>Disk plough</li>
-              <li>Cultivator</li>
-              <li>Simple disk plough</li>
-            </ul>
-            <div
-              class="product_showcase bg-blue-100 flex w-full items-center justify-center h-[400px]"
-            >
-              <img class="w-full h-full object-cover object-center" />
-            </div>
+                </svg>
+              </span>
+            </a>
           </div>
-        </section>
-        <section>
-          <p>
-            <a href="hello">hellooo linkkkk</a>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam,
-            quasi veniam excepturi vero culpa saepe iusto cum nemo similique
-            itaque sed laudantium consequatur quod. Natus dicta debitis
-            doloribus architecto corporis blanditiis sapiente deserunt cumque
-            corrupti? Quia quasi consequatur sapiente nam excepturi modi esse
-            vero cumque laboriosam. Iusto fuga neque unde quas ea ratione
-            voluptatem quae necessitatibus saepe expedita impedit quaerat
-            quibusdam totam vel natus, ut pariatur vero inventore dolore ipsam,
-            possimus ullam. Voluptas cum similique natus assumenda dolore veniam
-            quam adipisci laudantium animi delectus? In soluta blanditiis porro
-            odit animi voluptatibus nemo eligendi iusto ut cumque quaerat
-            asperiores itaque corrupti sequi totam vitae, aliquam omnis esse
-            praesentium a enim harum iure sapiente. Libero facere dolor
-            reprehenderit omnis. Accusamus, corporis? Placeat fuga laudantium
-            facilis dignissimos voluptate nemo modi. Dolor ipsum inventore
-            suscipit pariatur eaque! Fugiat sint minima, laboriosam aut,
-            adipisci voluptatibus commodi illo repudiandae ex nobis consequatur!
-            Praesentium animi id repellat alias ab a laborum, labore mollitia
-            obcaecati, suscipit molestiae molestias quaerat tempora nisi ducimus
-            esse veniam, sed voluptatem. Ipsum dolores aperiam rerum ratione aut
-            dicta ducimus quis omnis sint accusantium! Facilis mollitia quod
-            excepturi temporibus saepe eaque repellat itaque dignissimos! Quo
-            laborum nobis magnam hic autem pariatur at nulla fugit.
-          </p>
-        </section>
-      </main>
-    </div>
+        </div>
+      </section>
+
+      <section
+        data-scroll
+        data-scroll-to-href="equipments"
+        class="py-10 mt-32 min-h-[500px]"
+      >
+        <h3 class="text-2xl mb-5">Equipments</h3>
+        <div class="flex">
+          <ul
+            class="product_list basis-96 [&>*]:cursor-pointer [&>*]:py-1 [&>*]:mb-1"
+          >
+            <li>Disk plough</li>
+            <li>Cultivator</li>
+            <li>Simple disk plough</li>
+          </ul>
+          <div
+            class="product_showcase bg-blue-100 flex w-full items-center justify-center h-[400px]"
+          >
+            <img class="w-full h-full object-cover object-center" />
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 
   <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
