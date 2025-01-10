@@ -5,44 +5,44 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Chivo:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/dist/locomotive-scroll.css"
     />
-
     <link rel="stylesheet" href="style.css" />
+
     <title>Kalyan Agro Industries</title>
   </head>
 
   <body class="bg-offWhite text-offBlack">
-    <header class="sm:py-2 text-offBlack sticky top-0 left-0 z-50">
+    <header class="py-2 text-offBlack sticky top-0 left-0 z-50">
       <nav class="flex websize justify-between items-center">
         <a href="/">
           <img
-            src="./src/assests/logo/logo7.png"
+            src="./src/assests/logo/logo4.png"
             class="w-20 sm:w-24"
             alt="kalyan agro industries"
           />
         </a>
 
-        <button onclick="openSideNav()" class="text-4xl sm:hidden mb-3">
+        <button
+          onclick="toggleMobileNav()"
+          class="toggle-btn text-4xl sm:hidden mb-1 transition-all duration-500"
+        >
           +
         </button>
 
-        <!-- mobiileNav -->
+        <!-- mobileNav -->
         <div
-          class="sideNav h-max py-10 opacity-0 bg-black text-white hidden sm:hidden absolute translate-y-[-20px] top-14 right-5 w-max p-4 border border-slate-900"
+          class="mobileNav h-max py-10 opacity-0 bg-offBlack text-offWhite sm:hidden absolute translate-y-[-20px] top-14 right-5 w-max p-4 border border-slate-900 rounded-sm [transition:all_900ms_cubic-bezier(0,_1.004,_0.639,_0.978)]"
         >
           <ul class="flex flex-col items-center gap-4 font-medium text-lg">
-            <button class="mb-5" onclick="closeSideNav()">Close</button>
             <li>
               <a href="/equipments">Equipments</a>
             </li>
@@ -52,7 +52,7 @@
             <li>
               <a
                 href="#"
-                class="flex mt-10 items-center gap-3 border border-gray-900 bg-white text-black py-1 px-3"
+                class="flex mt-10 items-center gap-3 border border-gray-900 bg-offWhite text-offBlack py-1 px-3"
               >
                 Call Now
                 <span class="text-black">
@@ -132,7 +132,7 @@
     </header>
 
     <main class="websize">
-      <section class="text-offWhite mt-20 flex flex-col">
+      <section class="text-offBlack mt-20 flex flex-col">
         <h1
           class="md:text-7xl text-center text-4xl text-offBlack uppercase font-bold"
         >
@@ -140,16 +140,16 @@
         </h1>
 
         <div
-          class="min-h-[730px] text-center sm:text-left p-2 relative flex flex-col sm:justify-end sm:pb-24 sm:pl-12"
+          class="min-h-[730px] text-center xl:text-left p-2 relative flex flex-col xl:justify-end sm:pb-24 sm:pl-12"
         >
           <picture>
             <source
-              media="(max-width:1025px)"
-              srcset="/src/assests/img/heroMobile.webp"
+              media="(max-width:1280px)"
+              srcset="/src/assests/img/diskplough_mobile.png"
             />
             <img
-              class="heroBg absolute inset-0 sm:rounded-3xl rounded-xl -z-10 sm:object-[0%_40%] object-[70%_40%] object-cover h-full w-full"
-              src="/src/assests/img/heroBg.webp"
+              class="heroBg absolute inset-0 sm:rounded-3xl rounded-xl -z-10 sm:object-[0%_40%] object-cover h-full w-full"
+              src="/src/assests/img/diskplough.png"
               alt="disk plough"
             />
           </picture>
@@ -159,18 +159,18 @@
               Engineered for Excellence in Agriculture
             </h2>
 
-            <p class="text-xs sm:text-sm max-w-[60ch]">
-              "From plows to harvesters, we provide the tools you need to
+            <p class="text-xs sm:text-sm max-w-[60ch] mx-auto xl:mx-0">
+              "From plows to cultivators, we provide the tools you need to
               cultivate more, work smarter, and grow stronger."
             </p>
 
             <a
-              class="group mx-auto md:mx-0 relative max-w-[200px] sm:py-3 py-2 ps-6 pe-14 hover:px-3 active:px-3 sm:hover:px-6 sm:active:px-6 mt-10 border flex justify-center items-center gap-2 transition-all duration-500 font-semibold"
+              class="group mx-auto xl:mx-0 relative max-w-[200px] sm:py-3 py-2 ps-6 pe-14 hover:px-3 active:px-3 sm:hover:px-6 sm:active:px-6 mt-10 border border-offBlack flex justify-center items-center gap-2 transition-all duration-500 font-semibold"
               href="/order"
             >
               ORDER NOW
               <span
-                class="text-white absolute right-5 top-[12px] sm:top-[18px] transition-all duration-500 group-hover:translate-x-5 group-hover:opacity-0 group-hover:invisible"
+                class="text-offBlack absolute right-5 top-[12px] sm:top-[18px] transition-all duration-500 group-hover:translate-x-5 group-hover:opacity-0 group-hover:invisible"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -232,23 +232,7 @@
         data-scroll
         data-scroll-to-href="equipments"
         class="py-10 mt-32 min-h-[500px]"
-      >
-        <h3 class="text-2xl mb-5">Equipments</h3>
-        <div class="flex">
-          <ul
-            class="product_list basis-96 [&>*]:cursor-pointer [&>*]:py-1 [&>*]:mb-1"
-          >
-            <li>Disk plough</li>
-            <li>Cultivator</li>
-            <li>Simple disk plough</li>
-          </ul>
-          <div
-            class="product_showcase bg-blue-100 flex w-full items-center justify-center h-[400px]"
-          >
-            <img class="w-full h-full object-cover object-center" />
-          </div>
-        </div>
-      </section>
+      ></section>
     </main>
   </body>
 
